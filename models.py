@@ -28,13 +28,13 @@ class Library:
     def add_book(self):
         title = input("책 제목을 입력하세요:")
         author = input("저자를 입력하세요:")
-        isbn = int(input("책 고유 번호를 입력하세요:"))
+        isbn = input("책 고유 번호를 입력하세요:")
 
         self.books.append(Book(title, author, isbn, False))
 
     def add_member(self):
         name = input("이름을 입력하세요:")
-        phone = int(input("-를 제외한 번호를 입력하세요:"))
+        phone = input("-를 제외한 번호를 입력하세요:")
         borrowed_books = False
         print("회원등록이 완료되었습니다.")
         self.members[name] = Member(name, phone, borrowed_books)
